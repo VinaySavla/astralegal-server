@@ -31,13 +31,13 @@ router.post("/contactus", async (req, res) => {
     html: `<p>You got a new message from:<p><br><p>Name : ${bodyData.first_name} ${bodyData.last_name}</p><br><p>Phone Number : ${bodyData.phone}</p><br><p>Email : ${bodyData.email}</p><br><p>Address : ${bodyData.address}</p><br><p>Message : ${bodyData.message}</p><br><p>Service : ${bodyData.service}</p><br><p>Best wishes, Astra Legal</p>`,
   };
 
-    // transporter.sendMail(message1, function (err, info) {
-    //   if (err) {
-    //     console.log(err);
-    //   } else {
-    //     // console.log(info);
-    //   }
-    // });
+    transporter.sendMail(message1, function (err, info) {
+      if (err) {
+        console.log(err);
+      } else {
+        // console.log(info);
+      }
+    });
 
   const createResponse = await ContactForm.create(bodyData);
   res.header({
@@ -60,13 +60,13 @@ router.post("/appointment", async (req, res) => {
     html: `<p>Appointment is booked by:<p><br><p>Name : ${bodyData.first_name} ${bodyData.last_name}</p><br><p>Phone Number : ${bodyData.phone}</p><br><p>Email : ${bodyData.email}</p><br><p>Date & Time : ${bodyData.date_time}</p><br><p>Message : ${bodyData.message}</p><br><p>Best wishes, Astra Legal</p>`,
   };
 
-    // transporter.sendMail(message1, function (err, info) {
-    //   if (err) {
-    //     console.log(err);
-    //   } else {
-    //     // console.log(info);
-    //   }
-    // });
+    transporter.sendMail(message1, function (err, info) {
+      if (err) {
+        console.log(err);
+      } else {
+        // console.log(info);
+      }
+    });
 
   const createResponse = await Appointment.create(bodyData);
   res.header({
