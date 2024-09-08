@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "astralegal",
+    "password": "Astr@Lega!123",
+    "database": "astralegaldb",
+    "host": "184.168.119.63",
+    "dialect": "mysql",
+    "logging": false,
+    "timezone": "+05:30"
+  },
+  "test": {
+    "username": "astralegal",
+    "password": "Astr@Lega!123",
+    "database": "astralegaldb",
+    "host": "184.168.119.63",
+    "dialect": "mysql",
+    "timezone": "+05:30"
+  },
+  "production": {
+    "username": "astralegal",
+    "password": "Astr@Lega!123",
+    "database": "astralegaldb",
+    "host": "184.168.119.63",
+    "dialect": "mysql",
+    "timezone": "+05:30"
+  }
+}
