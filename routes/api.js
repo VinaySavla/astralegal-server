@@ -28,7 +28,7 @@ router.post("/contactus", async (req, res) => {
     from: "astralegalco@gmail.com",
     to: "astralegalco@gmail.com",
     subject: `Contact us request from ${bodyData.first_name}`,
-    html: `<p>You got a new message from:<p><br><p>Name : ${bodyData.first_name} ${bodyData.last_name}</p><br><p>Phone Number : ${bodyData.phone}</p><br><p>Email : ${bodyData.email}</p><br><p>Address : ${bodyData.address}</p><br><p>Message : ${bodyData.message}</p><br><p>Service : ${bodyData.service}</p><br><p>Best wishes, Astra Legal</p>`,
+    html: `<p>You got a new message from:<p><p>Name : ${bodyData.first_name} ${bodyData.last_name}</p><p>Phone Number : ${bodyData.phone}</p><p>Email : ${bodyData.email}</p><p>Address : ${bodyData.address}</p><p>Message : ${bodyData.message}</p><p>Service : ${bodyData.service}</p><p>Best wishes, Astra Legal</p>`,
   };
 
     transporter.sendMail(message1, function (err, info) {
@@ -57,7 +57,7 @@ router.post("/appointment", async (req, res) => {
     from: "astralegalco@gmail.com",
     to: "astralegalco@gmail.com",
     subject: `Appointent booked by ${bodyData.first_name}`,
-    html: `<p>Appointment is booked by:<p><br><p>Name : ${bodyData.first_name} ${bodyData.last_name}</p><br><p>Phone Number : ${bodyData.phone}</p><br><p>Email : ${bodyData.email}</p><br><p>Date & Time : ${bodyData.date_time}</p><br><p>Message : ${bodyData.message}</p><br><p>Best wishes, Astra Legal</p>`,
+    html: `<p>Appointment is booked by:<p><p>Name : ${bodyData.first_name} ${bodyData.last_name}</p><p>Phone Number : ${bodyData.phone}</p><p>Email : ${bodyData.email}</p><p>Date & Time : ${bodyData.date_time}</p><p>Message : ${bodyData.message}</p><p>Best wishes, Astra Legal</p>`,
   };
 
     transporter.sendMail(message1, function (err, info) {
